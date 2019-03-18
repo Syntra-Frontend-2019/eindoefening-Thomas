@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+form {
+    background: #E0F7FA;
+    padding: 30px;
+}
+main {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.divList {
+    flex: 2;
+}
+.divForm {
+    flex: 1;
+}
+#date {
+    display: flex;
+}
+.date {
+    flex: 1 1 33%;
+}
+#name {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background: #009688;
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+li {
+    padding: 2%;
+    margin: 1% 0;
+    flex: 0 1 42%;
+}
+small {
+    display: block;
+}
+.male {
+    background: #03A9F4;
+    border: #3f51b5 solid 3px;
+}
+.female {
+    background: #FCE4EC;
+    border: #E91E63 solid 3px;
+}
+.other {
+    background: #FFC107;
+    border: #FF9800 solid 3px;
+}

@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <title>Eindopdracht - Thomas</title>
 </head>
 <body>
     <h1>MNDR TNDR</h1>
+    <main>
 
+    <div class="divForm">
     <form action="">
-        <p>
-            <label for="">Name</label><br>
-            <input type="text">
+        <p id="name">
+            <label for="">Name</label>
+            <input id="nameInput" type="text">
         </p>
-      
-
-        <label for="day month year">Birthday</label><br>      
-            <select name="day">
+        
+        <label for="day month year">Birthday</label> 
+        <div id="date"> 
+            <select name="day" class="date" id="dayInput">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -50,7 +53,7 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
             </select>
-            <select name="month">
+            <select class="date" name="month" id="monthInput">
                 <option value="January">January</option>
                 <option value="February">February</option>
                 <option value="March">March</option>
@@ -64,7 +67,7 @@
                 <option value="November">November</option>
                 <option value="December">December</option>
                 </select> 
-            <select name="year">
+            <select class="date" name="year" id="yearInput">
                 <option value="2014">2014</option>
                 <option value="2013">2013</option>
                 <option value="2012">2012</option>
@@ -181,16 +184,24 @@
                 <option value="1901">1901</option>
                 <option value="1900">1900</option>
         </select>
+        </div> <!-- End of id date-->
 
         <p>
             <label for="">Gender</label><br>
-            <input type="radio">Male<br>
-            <input type="radio">Female<br>
-            <input type="radio">Other<br>
+            <input type="radio" name="gender" value="Male">Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <input type="radio" name="gender" value="Other">Other<br>
         </p>
-        <button type="submit">ADD</button>
-
+        <button type="button" id="submitButton">ADD</button>
     </form>
-    
+    </div>
+    <div class="divList">
+        <ul class="list">
+
+
+        </ul>
+    </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
