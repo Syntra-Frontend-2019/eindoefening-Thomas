@@ -28,9 +28,7 @@ function printList(){
         } else {
             new_li.setAttribute("class", "other");
         }
-        console.log(new_li.getAttribute('class'));
     }
-    console.log(list);
 };
 
 var submitButton = document.querySelector('#submitButton');

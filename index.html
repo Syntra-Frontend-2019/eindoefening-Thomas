@@ -14,11 +14,11 @@
     <div class="divForm">
     <form action="">
         <p id="name">
-            <label for="name">Name</label>
+            <label for="nameInput">Name</label>
             <input id="nameInput" name="name" type="text">
         </p>
         
-        <label for="day month year">Birthday</label> 
+        <label for="date">Birthday</label> 
         <div id="date"> 
             <select name="day" class="date" id="dayInput">
                 <option value="1">1</option>
@@ -183,15 +183,21 @@
                 <option value="1902">1902</option>
                 <option value="1901">1901</option>
                 <option value="1900">1900</option>
-        </select>
+            </select>
         </div> <!-- End of id date-->
 
-        <p>
-            <label for="">Gender</label><br>
-            <input type="radio" name="gender" value="Male">Male<br>
-            <input type="radio" name="gender" value="Female">Female<br>
-            <input type="radio" name="gender" value="Other">Other<br>
-        </p>
+        <div id="genderForm">
+            <label for="genderInput">Gender</label>
+            <div id="genderInput">
+                <input type="radio" name="gender" value="Male">Male<br>
+                <input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="Other">Other<br>
+            </div>
+        </div>
+
+
+          
+
         <button type="button" id="submitButton">ADD</button>
     </form>
     </div>

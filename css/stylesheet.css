@@ -57,12 +57,23 @@ small {
 .male {
     background: #03A9F4;
     border: #3f51b5 solid 3px;
+    color: #3f51b5;
 }
 .female {
     background: #FCE4EC;
     border: #E91E63 solid 3px;
+    color: #E91E63; 
 }
 .other {
     background: #FFC107;
     border: #FF9800 solid 3px;
+    color: #FF9800;
+}
+
+label[for="genderInput"] {
+    margin-bottom: 0;
+}
+
+#genderForm {
+    margin: 1em 0px;
 }
